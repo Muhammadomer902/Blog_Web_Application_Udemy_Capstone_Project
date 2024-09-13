@@ -1,0 +1,13 @@
+<%- include("./partials/header.ejs") %>
+<div class="small-container">
+    <h1>Edit Blog Post Content</h1>
+    <form action="/update-post" method="post">
+        <input type="hidden" name="title" value="<%= title %>">
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" required><%= content %></textarea>
+        </div>
+        <button type="submit">Update Post</button>
+    </form>
+</div>
+<%- include("./partials/footer.ejs") %>

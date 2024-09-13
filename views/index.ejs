@@ -1,0 +1,46 @@
+
+        <%- include("./partials/header.ejs") %>
+        <div class="small-container">
+            <h1>BLOG WEB</h1>
+            <p>Welcome to our Blog Web Application! This platform offers a user-friendly environment for engaging with blog content. Here’s what you can do:</p>
+            <ul>
+                <li><strong>Post Your Blogs:</strong> Share your thoughts, insights, and experiences with the world. Creating a blog is simple and allows you to express yourself on a variety of topics.</li>
+                <li><strong>View Blogs:</strong> Explore a diverse range of blogs posted by other users. Whether you’re interested in lifestyle, technology, travel, or personal stories, you can find and read posts that pique your interest.</li>
+                <li><strong>Manage Your Posts:</strong> Easily manage your own posts. Edit or delete blogs you’ve created to keep your content up-to-date or remove outdated posts.</li>
+            </ul>
+            <p>With an intuitive interface and easy navigation, our application makes blogging and content management accessible and enjoyable. Join our community today and start blogging!</p>
+            <hr>
+        </div>
+        <div class="small-container">
+            <h1>MOST VIEWED</h1>
+            <p>These are some of our most-viewed Blogs:</p>
+            <div class="smaller-container">
+                <a href="./blogs/is-it-worth-being-wise.ejs" class="blog-item">
+                    <h2>Is It Worth Being Wise</h2>
+                    <p>This essay, titled "Is It Worth Being Wise?" by Paul Graham, explores the nuanced relationship between wisdom and intelligence, delving into their definitions, differences, and implications in various contexts.</p>
+                </a>
+                <a href="./blogs/having-kids.ejs" class="blog-item">
+                    <h2>Having Kids</h2>
+                    <p>This essay provides a personal reflection on the experience of having kids, emphasizing how the author's perspective shifted dramatically after becoming a parent. The author describes initially fearing parenthood, perceiving it as a life filled with dull responsibilities, noise, and a lack of freedom. However, after having children, the author realized that the fears were largely based on selection bias—only noticing children during stressful or chaotic moments—and misconceptions about the nature of parenting.</p>
+                </a>
+                <a href="./blogs/how-to-lose-time-and-money.ejs" class="blog-item">
+                    <h2>How To Lose Time And Money</h2>
+                    <p>In this essay, the author explores the concept of losing time and money, drawing an insightful parallel between how people waste their financial and temporal resources. The central argument is that, contrary to popular belief, most losses of money and time do not come from obvious forms of indulgence but from more deceptive, seemingly productive activities that ultimately yield little value.</p>
+                </a>
+            </div>
+            <hr>
+        </div>
+        <div class="small-container">
+            <h1>ALL BLOGS</h1>
+            <p>These are all the Blogs on the Website currently:</p>
+            <ul>
+                <% BlogsArr.forEach(file => { %>
+                    <li>
+                        <a href="/blogs/<%= file %>">
+                            <%= file.replace(/\.ejs$/, '') %>
+                        </a>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+        <%- include("./partials/footer.ejs") %>
