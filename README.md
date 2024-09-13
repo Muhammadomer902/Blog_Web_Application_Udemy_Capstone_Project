@@ -7,3 +7,5 @@ In order to run the files Download all
 run npm install on terminal
 
 then node index.js
+
+To visit the live Website click:-https://blogweb-application-20yv.onrender.com
