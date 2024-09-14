@@ -4,9 +4,9 @@ You can Create, Edit or Delete Blogs according to your liking
 
 In order to run the files Download all
 
-run npm install on terminal
+run "npm install" on terminal
 
-then node index.js
+then "node index.js"
 
 This is a Capstone Project#3 of course:- https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=SKILLS4SALEA
 
