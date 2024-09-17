@@ -14,4 +14,4 @@ For more Projects of the Course Visit :-https://github.com/Muhammadomer902/Udemy
 
 To visit the live Website click:-https://blogweb-application-20yv.onrender.com
 
-It might be live or paused
+It might be live or suspended
